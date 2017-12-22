@@ -48,4 +48,18 @@ public class RegistroVideo extends Conexion {
             return false;
     }
 
+                public boolean ModificaPeli(){
+            //Se arma la consulta
+            String q="UPDATE videobuster.pelicula SET nombre= 'P_Nuevodrama' WHERE codigo=2";
+            //se ejecuta la consulta
+            try {
+                PreparedStatement pstm = this.getconexion().prepareStatement(q);
+                pstm.execute();
+                pstm.close();
+                return true;
+            }catch(SQLException e){
+                System.err.println( e.getMessage() );
+            }
+            return false;
+    }
 }

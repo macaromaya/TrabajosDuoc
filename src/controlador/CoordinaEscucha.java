@@ -47,6 +47,8 @@ public class CoordinaEscucha implements ActionListener {
         this.vistaPrincipal.btn_drama.addActionListener(this);
         this.vistaPrincipal.btn_limpiar.setActionCommand( "btn_limpiar" );
         this.vistaPrincipal.btn_limpiar.addActionListener(this);
+        this.vistaPrincipal.btn_nuevoregistrosP.setActionCommand( "btn_nuevoregistrosP" );
+        this.vistaPrincipal.btn_nuevoregistrosP.addActionListener(this);
         
     }
     //esto es un metodo abstracto que nos sirve para escuchar el formulario
@@ -69,6 +71,13 @@ public class CoordinaEscucha implements ActionListener {
             break;
             case btn_limpiar:  
                this.vistaPrincipal.txtf_nompeli.setText(" ");
+            break;
+                case btn_nuevoregistrosP:  
+                if(this.comunicaBD.ModificaPeli()){
+                    JOptionPane.showMessageDialog(null, "Se agrego la pelicula en drama");                    
+                }else{
+                    JOptionPane.showMessageDialog(null, "No se pudo agregar nadita de nada");
+                }
             break;
            
         }

@@ -78,6 +78,11 @@ public class Vista_Taller extends javax.swing.JFrame {
         btn_elim_por_precio.setText("Elimina por $");
 
         btn_nuevoregistrosP.setText("Cambio registro P_");
+        btn_nuevoregistrosP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_nuevoregistrosPActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Ingreso rápido a categoría Drama");
 
@@ -185,6 +190,10 @@ public class Vista_Taller extends javax.swing.JFrame {
     private void btn_limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_limpiarActionPerformed
+
+    private void btn_nuevoregistrosPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoregistrosPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_nuevoregistrosPActionPerformed
 
     /**
      * @param args the command line arguments
