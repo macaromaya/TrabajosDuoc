@@ -57,6 +57,11 @@ public class Vista_Taller extends javax.swing.JFrame {
         });
 
         btn_limpiar.setText("Limpiar Todo");
+        btn_limpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_limpiarActionPerformed(evt);
+            }
+        });
 
         btn_comedia.setText("Comedia");
         btn_comedia.addActionListener(new java.awt.event.ActionListener() {
@@ -177,6 +182,10 @@ public class Vista_Taller extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_comediaActionPerformed
 
+    private void btn_limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_limpiarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_limpiarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -210,6 +219,6 @@ public class Vista_Taller extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField txtf_nompeli;
+    public javax.swing.JTextField txtf_nompeli;
     // End of variables declaration//GEN-END:variables
 }

@@ -45,6 +45,8 @@ public class CoordinaEscucha implements ActionListener {
         this.vistaPrincipal.btn_comedia.addActionListener(this);
         this.vistaPrincipal.btn_drama.setActionCommand( "btn_drama" );
         this.vistaPrincipal.btn_drama.addActionListener(this);
+        this.vistaPrincipal.btn_limpiar.setActionCommand( "btn_limpiar" );
+        this.vistaPrincipal.btn_limpiar.addActionListener(this);
         
     }
     //esto es un metodo abstracto que nos sirve para escuchar el formulario
@@ -65,6 +67,10 @@ public class CoordinaEscucha implements ActionListener {
                     JOptionPane.showMessageDialog(null, "No se pudo agregar nadita de nada");
                 }
             break;
+            case btn_limpiar:  
+               this.vistaPrincipal.txtf_nompeli.setText(" ");
+            break;
+           
         }
     }
       

@@ -47,5 +47,5 @@ public class RegistroVideo extends Conexion {
             }
             return false;
     }
-    
+
 }
