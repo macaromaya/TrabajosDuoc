@@ -49,6 +49,8 @@ public class CoordinaEscucha implements ActionListener {
         this.vistaPrincipal.btn_limpiar.addActionListener(this);
         this.vistaPrincipal.btn_nuevoregistrosP.setActionCommand( "btn_nuevoregistrosP" );
         this.vistaPrincipal.btn_nuevoregistrosP.addActionListener(this);
+        this.vistaPrincipal.btn_elim_por_precio.setActionCommand( "btn_elim_por_precio" );
+        this.vistaPrincipal.btn_elim_por_precio.addActionListener(this);
         
     }
     //esto es un metodo abstracto que nos sirve para escuchar el formulario
@@ -79,7 +81,13 @@ public class CoordinaEscucha implements ActionListener {
                     JOptionPane.showMessageDialog(null, "No se pudo agregar nadita de nada");
                 }
             break;
-           
+           case btn_elim_por_precio:  
+                if(this.comunicaBD.EliminaporPrecio()){
+                    JOptionPane.showMessageDialog(null, "Se eliminaron registros con montos superiores a 2000");                    
+                }else{
+                    JOptionPane.showMessageDialog(null, "No se borro nada");
+                }
+            break;
         }
     }
       

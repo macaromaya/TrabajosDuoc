@@ -62,4 +62,22 @@ public class RegistroVideo extends Conexion {
             }
             return false;
     }
+                
+                
+            public boolean EliminaporPrecio(){
+            //Se arma la consulta
+            String q="DELETE FROM videobuster.pelicula WHERE precio>=2000";
+            //se ejecuta la consulta
+            try {
+                PreparedStatement pstm = this.getconexion().prepareStatement(q);
+                pstm.execute();
+                pstm.close();
+                return true;
+            }catch(SQLException e){
+                System.err.println( e.getMessage() );
+            }
+            return false;
+    }
 }
+
+        
