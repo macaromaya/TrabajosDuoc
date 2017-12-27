@@ -29,9 +29,9 @@ public class Productos extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -48,14 +48,14 @@ public class Productos extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BOTELLON AGUA $7.000 c/u");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Duoc UC\\Desktop\\pack_bomba.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Duoc UC\\Desktop\\pack_bomba.png")); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("PACK BOMBA AGUA $19.000 c/u");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Duoc UC\\Desktop\\packinicialsoporte.png")); // NOI18N
-        jButton2.setText("jButton2");
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Duoc UC\\Desktop\\packinicialsoporte.png")); // NOI18N
+        jButton3.setText("jButton2");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,13 +82,13 @@ public class Productos extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(39, 39, 39)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(37, 37, 37)))
@@ -100,8 +100,8 @@ public class Productos extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
                     .addComponent(jButton3)
+                    .addComponent(jButton2)
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,9 +154,9 @@ public class Productos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -36,7 +36,7 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         tf_email = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        btn_clinext = new javax.swing.JButton();
+        Btn_clientesig = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,7 +59,7 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("DATOS DE CLIENTES");
 
-        btn_clinext.setText("SIGUIENTE");
+        Btn_clientesig.setText("SIGUIENTE");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,7 +89,7 @@ public class Usuarios extends javax.swing.JFrame {
                                 .addComponent(tf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(153, 153, 153)
-                        .addComponent(btn_clinext)))
+                        .addComponent(Btn_clientesig)))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -113,7 +113,7 @@ public class Usuarios extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(tf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
-                .addComponent(btn_clinext)
+                .addComponent(Btn_clientesig)
                 .addContainerGap(51, Short.MAX_VALUE))
         );
 
@@ -160,7 +160,7 @@ public class Usuarios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_clinext;
+    public javax.swing.JButton Btn_clientesig;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

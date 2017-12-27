@@ -34,7 +34,7 @@ public class Carro_compra extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        Finaliza = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,10 +54,10 @@ public class Carro_compra extends javax.swing.JFrame {
 
         jLabel4.setText("Total a pagar");
 
-        jButton1.setText("Finalizar Compra");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Finaliza.setText("Finalizar Compra");
+        Finaliza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                FinalizaActionPerformed(evt);
             }
         });
 
@@ -83,7 +83,7 @@ public class Carro_compra extends javax.swing.JFrame {
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(Finaliza)
                         .addGap(30, 30, 30))))
         );
         layout.setVerticalGroup(
@@ -98,7 +98,7 @@ public class Carro_compra extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Finaliza, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -113,9 +113,9 @@ public class Carro_compra extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void FinalizaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinalizaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_FinalizaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -153,7 +153,7 @@ public class Carro_compra extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton Finaliza;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
