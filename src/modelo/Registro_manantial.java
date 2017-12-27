@@ -15,7 +15,7 @@ public class Registro_manantial extends Conexion {
     public static boolean accedercli(Integer rut, String nombre) {
         try {
             Connection cnx = Conexion.getconexion();
-            String query = "SELECT * FROM manantial.usuario WHERE rut = ? and nombre=? ";
+            String query = "SELECT * FROM manantial.usuario WHERE rut=? and nombre=?";
             PreparedStatement select = cnx.prepareStatement(query);
             select.setInt(1, rut);
             select.setString(2, nombre);
@@ -39,7 +39,12 @@ public class Registro_manantial extends Conexion {
             return true;
         }
     }
+    ////
     
+
+           
+    
+
     
     
 }

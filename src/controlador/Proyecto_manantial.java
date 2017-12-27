@@ -5,10 +5,12 @@
  */
 package controlador;
 
-/**
- *
- * @author Duoc UC
- */
+import conexion.Conexion;
+import vista.Login;
+import vista.Usuarios;
+import vista.Productos;
+import vista.Carro_compra;
+
 public class Proyecto_manantial {
 
     /**
@@ -16,6 +18,7 @@ public class Proyecto_manantial {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new CoordinaEscucha (new Login()).iniciar();
     }
     
 }

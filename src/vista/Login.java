@@ -5,10 +5,12 @@
  */
 package vista;
 
-/**
- *
- * @author Duoc UC
- */
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -16,6 +18,9 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        
+        
+        
     }
 
     /**
@@ -104,6 +109,9 @@ public class Login extends javax.swing.JFrame {
 
     private void Btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_loginActionPerformed
         // TODO add your handling code here:
+        Usuarios obj= new Usuarios();
+        obj.setVisible(true);
+        dispose();
     }//GEN-LAST:event_Btn_loginActionPerformed
 
     /**
