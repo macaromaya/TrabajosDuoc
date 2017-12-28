@@ -10,7 +10,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import modelo.Registro_manantial;
 import vista.Login;
-import vista.Usuarios;
 import vista.Productos;
 import vista.Carro_compra;
 /**
@@ -20,7 +19,7 @@ import vista.Carro_compra;
 public class CoordinaEscucha  implements ActionListener{
     //Declaramos las vistas
     Login vistainicial = new Login();
-    Usuarios vistadato = new Usuarios ();
+  
     Productos vistaprod = new Productos ();
     Carro_compra vistacarro = new Carro_compra ();
     
@@ -46,7 +45,6 @@ public class CoordinaEscucha  implements ActionListener{
     public void iniciar(){
         //con esto dejamos la pantalla de la vista quede en el centro
         this.vistainicial.setLocationRelativeTo(null);
-        this.vistadato.setLocationRelativeTo(null);
         this.vistaprod.setLocationRelativeTo(null);
         this.vistacarro.setLocationRelativeTo(null);
         //con esto dejamos la vista principal visible 
@@ -54,8 +52,6 @@ public class CoordinaEscucha  implements ActionListener{
         //vamos a escuchar todos los botones, se da actionCommand y actionlistener para cada boton
         this.vistainicial.Btn_login.setActionCommand( "Btn_login" );
         this.vistainicial.Btn_login.addActionListener(this);
-        this.vistadato.Btn_clientesig.setActionCommand( "Btn_clientesig" );
-        this.vistadato.Btn_clientesig.addActionListener(this);
         this.vistaprod.jButton1.setActionCommand( "jButton1" );
         this.vistaprod.jButton1.addActionListener(this);
         this.vistaprod.jButton2.setActionCommand( "jButton2" );
@@ -77,9 +73,5 @@ public class CoordinaEscucha  implements ActionListener{
                         JOptionPane.showMessageDialog(null, "No se pudo acceder");
                     }
                     break;
-
-            
-
-        }
-        }
-}
+        
+        } }}

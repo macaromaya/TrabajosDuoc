@@ -38,13 +38,5 @@ public class Registro_manantial extends Conexion {
             System.err.println("Error SQL" + e.getMessage());
             return true;
         }
-    }
-    ////
-    
-
-           
-    
-
-    
-    
-}
+ 
+}}

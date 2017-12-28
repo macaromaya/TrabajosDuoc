@@ -7,7 +7,6 @@ package vista;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -108,10 +107,10 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_usuarioActionPerformed
 
     private void Btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_loginActionPerformed
-        // TODO add your handling code here:
-        Usuarios obj= new Usuarios();
+        Productos obj= new Productos();
         obj.setVisible(true);
-        dispose();
+        
+       
     }//GEN-LAST:event_Btn_loginActionPerformed
 
     /**
